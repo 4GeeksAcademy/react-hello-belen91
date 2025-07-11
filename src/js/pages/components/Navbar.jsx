@@ -1,9 +1,9 @@
 
-export const Navbar = () => {
+const Navbar = ({setPage}) => {
     return (
-        <nav className="navbar navbar-expand-lg bg-warning ">
+        <nav className="navbar navbar-expand-lg bg-warning justify-content-end">
             <div className="container-fluid d-flex">
-                <a className="navbar-brand text-primary fw-bold" href="">Pokémon</a>
+                <a className="navbar-brand text-primary fw-bold" href= "#" onClick={() => setPage("home")}> Pokémon</a>
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
                 </button>
@@ -19,11 +19,14 @@ export const Navbar = () => {
                             <a className="nav-link --bs-warning-text-emphasis" href="#">Mapa</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link --bs-warning-text-emphasis" href="#">Combate</a>
+                            <a className="nav-link --bs-warning-text-emphasis" href="#" 
+                            onClick={() => setPage("combat")}>Combate</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
-)}
+)}; 
+
+export default Navbar; 
 

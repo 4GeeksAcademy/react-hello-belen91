@@ -19,8 +19,13 @@ body {
     background:url(src/img/jumbotron-pokemon.jpg);
     background-size: cover;
     background-position: center;
-    min-height: "45rem"; 
-
+    min-height: 30rem; 
 }
+.div-combate {
+    background-color: #FFC107;
+    width: 50rem;
+    min-height: 30rem;
+}
+
             
 

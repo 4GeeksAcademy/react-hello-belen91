@@ -1,16 +1,15 @@
 import React from "react";
-import  {Navbar} from "./Navbar";
-import {Jumbotron} from "./Jumbotron";
-import {Card} from "./Card"; 
-import {Footer} from "./Footer";
+import Jumbotron from "./components/Jumbotron";
+import Card from "./components/Card";
 
-const Home = () => {
+const HomePage = () => {
+	
 	return (
 		<React.Fragment> 
-			<Navbar />
-		
 			<div className="container">
-				<Jumbotron/>
+				<Jumbotron tittle= "¡Elige a tu primer Pokémon!" 
+				text= "¡Espera! No es una decisión fácil, ¿verdad? Este será tu compañero hasta que lo mates o te lo maten.Tendrás que cuidarlo, entrenarlo y, a algunos, pagarles el cambio de sexo,  ¡pero viviréis juntos muchísimas aventuras! (y curas).Así que, toma un respiro, relájate y, sobre todo, ¡diviértete!" 
+				button = "¿Ya tienes tu Pokémon? ¡Empieza tu aventura!"/>
 				
 				<section className= "row justify-content-center gap-4">
 					<Card image= "src/img/Bulbasaur.png" tittle="Bulbasaur" text="El Pokémon que ama las plantas, ¡y a ti también! Bulbasaur es el compañero perfecto para el entrenador que quiere empezar fuerte. Es tierno, amigable, y siempre está listo para lanzar un par de líneas de veneno." button="¡prepárate para ver cómo crece en una poderosa Venusaur!"/>
@@ -19,10 +18,9 @@ const Home = () => {
 					<Card image= "src/img/pikachu.webp" tittle="Pikachu" text="¿Te echo un cable? Pikachu no solo es adorable, ¡es leal y con un poder increíble! Con su energía y su actitud optimista, Pikachu será tu aliado perfecto en esta aventura. Y además, tiene onlyfans" button="¡Con Pikachu a tu lado, la victoria está asegurada!"/>
 				</section>
 			</div>
-		
-			<Footer/>
 		</React.Fragment>
 	);
 };
 
-export default Home;
+export default HomePage; 
+

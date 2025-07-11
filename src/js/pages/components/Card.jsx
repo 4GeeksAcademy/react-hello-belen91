@@ -1,7 +1,7 @@
 
-export const Card = ({image, tittle, text, button}) => {
+const Card = ({image, tittle, text, button}) => {
     return (
-        <div className="card-container card col-12 col-md-6 col-3 my-5 p-0 " style={{ width: "18rem" }}>
+        <div className="card-container card col-12 col-md-6 my-5 p-0 " style={{ width: "18rem" }}>
             <img src={image} className="card-img card-img-top" />
             <div className="card-body d-flex flex-column justify-content-between">
                 <h5 className="card-title text-center">{tittle}</h5>
@@ -10,4 +10,6 @@ export const Card = ({image, tittle, text, button}) => {
             </div>
         </div>
     )
-}
+};
+
+export default Card; 
